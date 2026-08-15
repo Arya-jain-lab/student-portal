@@ -21,4 +21,4 @@ int main() {
     updateSetting(settings, "theme", "dark");
     printSettings(settings);
     return 0;
-}
+}//Utility comment
