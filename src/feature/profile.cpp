@@ -9,3 +9,7 @@ struct UserProfile {
 void displayProfile(const UserProfile& profile) {
     std::cout << "Name: " << profile.name << ", Email: " << profile.email << std::endl;
 }
+
+void updateEmail(UserProfile& profile, const std::string& newEmail) {
+    profile.email = newEmail;
+}
