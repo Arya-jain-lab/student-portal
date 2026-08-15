@@ -9,3 +9,9 @@ std::map<std::string, std::string> defaultSettings() {
 void updateSetting(std::map<std::string, std::string>& settings, const std::string& key, const std::string& value) {
     settings[key] = value;
 }
+
+void printSettings(const std::map<std::string, std::string>& settings) {
+    for (const auto& pair : settings) {
+        std::cout << pair.first << ": " << pair.second << std::endl;
+    }
+}
