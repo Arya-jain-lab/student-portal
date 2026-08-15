@@ -18,6 +18,18 @@ std::string generateSessionToken(const std::string& username) {
 }
 
 int main() {
-    std::cout << "Login module loaded." << std::endl;
+    std::string username = "arya123";
+    std::string password = "securepass";
+
+    if (!validateUsername(username)) {
+        handleLoginError("Invalid username");
+        return 1;
+    }
+    if (!validatePassword(password)) {
+        handleLoginError("Invalid password");
+        return 1;
+    }
+    std::string token = generateSessionToken(username);
+    std::cout << "Login successful. Token: " << token << std::endl;
     return 0;
 }
