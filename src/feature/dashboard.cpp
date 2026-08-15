@@ -15,3 +15,10 @@ void printCourses(const std::vector<std::string>& courses) {
 int countCourses(const std::vector<std::string>& courses) {
     return courses.size();
 }
+
+int main() {
+    std::vector<std::string> courses = getEnrolledCourses();
+    std::cout << "Enrolled in " << countCourses(courses) << " courses:" << std::endl;
+    printCourses(courses);
+    return 0;
+}
