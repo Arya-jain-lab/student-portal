@@ -2,7 +2,7 @@
 #include <string>
 
 void printWelcomeMessage() {
-    std::cout << "      Welcome to Git !       " << std::endl;
+    std::cout << "      Welcome to Student Portal !       " << std::endl;
 }
 
 
