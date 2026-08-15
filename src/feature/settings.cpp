@@ -15,3 +15,10 @@ void printSettings(const std::map<std::string, std::string>& settings) {
         std::cout << pair.first << ": " << pair.second << std::endl;
     }
 }
+
+int main() {
+    auto settings = defaultSettings();
+    updateSetting(settings, "theme", "dark");
+    printSettings(settings);
+    return 0;
+}
