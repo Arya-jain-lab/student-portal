@@ -13,3 +13,11 @@ void displayProfile(const UserProfile& profile) {
 void updateEmail(UserProfile& profile, const std::string& newEmail) {
     profile.email = newEmail;
 }
+
+int main() {
+    UserProfile profile = {"Arya Jain", "arya@example.com"};
+    displayProfile(profile);
+    updateEmail(profile, "new_arya@example.com");
+    displayProfile(profile);
+    return 0;
+}
