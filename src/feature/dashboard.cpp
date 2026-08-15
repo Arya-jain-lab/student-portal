@@ -16,6 +16,10 @@ int countCourses(const std::vector<std::string>& courses) {
     return courses.size();
 }
 
+void clearCourses(std::vector<std::string>& courses) {
+    courses.clear();
+}
+
 int main() {
     std::vector<std::string> courses = getEnrolledCourses();
     std::cout << "Enrolled in " << countCourses(courses) << " courses:" << std::endl;
