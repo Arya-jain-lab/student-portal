@@ -5,3 +5,7 @@
 std::map<std::string, std::string> defaultSettings() {
     return {{"theme", "light"}, {"notifications", "on"}};
 }
+
+void updateSetting(std::map<std::string, std::string>& settings, const std::string& key, const std::string& value) {
+    settings[key] = value;
+}
