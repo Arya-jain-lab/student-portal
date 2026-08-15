@@ -25,4 +25,4 @@ int main() {
     std::cout << "Enrolled in " << countCourses(courses) << " courses:" << std::endl;
     printCourses(courses);
     return 0;
-}// scratch note for cherry-pick demo 
+}
