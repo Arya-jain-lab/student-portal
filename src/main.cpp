@@ -2,7 +2,7 @@
 #include <string>
 
 void printWelcomeMessage() {
-    std::cout << "      Welcome to Git !       " << std::endl;
+    std::cout << "      Welcome to Student Portal System!       " << std::endl;
 }
 
 
@@ -15,7 +15,7 @@ int addNumbers(int a, int b) {
 }
 int divide(int a, int b) {
     if (b == 0) {
-        std::cout << "Error: Cannot divide by zero" << std::endl;
+        std::cout << "Error: Cannot divide "<< endl;
         return 0;
     }
     return a / b;
