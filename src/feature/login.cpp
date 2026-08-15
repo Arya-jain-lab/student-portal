@@ -9,6 +9,10 @@ bool validatePassword(const std::string& password) {
     return password.length() >= 8;
 }
 
+void handleLoginError(const std::string& reason) {
+    std::cout << "Login failed: " << reason << std::endl;
+}
+
 std::string generateSessionToken(const std::string& username) {
     return username + "_session_" + std::to_string(rand() % 100000);
 }
