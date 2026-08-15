@@ -11,3 +11,7 @@ void printCourses(const std::vector<std::string>& courses) {
         std::cout << "- " << c << std::endl;
     }
 }
+
+int countCourses(const std::vector<std::string>& courses) {
+    return courses.size();
+}
